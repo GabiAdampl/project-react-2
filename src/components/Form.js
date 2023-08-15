@@ -20,7 +20,7 @@ const Form = () => {
 				<input
 					type='number'
 					id='amountInput'
-					value={amount}
+					defaultValue={amount}
 					onChange={handleAmountChange}
 					required
 					min='0.01'
@@ -30,13 +30,13 @@ const Form = () => {
 
 			<label className='d-flex align-items-center gap-2 font-weight-bold' htmlFor='currencySelect'>
 				Waluta:
-				<select id='currencySelect' value={currency} onChange={handleCurrencyChange} required>
-					<option value='' disabled selected>
+				<select id='currencySelect' defaultValue={currency} onChange={handleCurrencyChange} required>
+					<option defaultValue='' disabled selected>
 						Wybierz walutę
 					</option>
-					<option value='EUR'>EUR</option>
-					<option value='USD'>USD</option>
-					<option value='CHF'>CHF</option>
+					<option defaultValue='EUR'>EUR</option>
+					<option defaultValue='USD'>USD</option>
+					<option defaultValue='CHF'>CHF</option>
 				</select>
 			</label>
 
